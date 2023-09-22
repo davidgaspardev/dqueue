@@ -47,6 +47,10 @@ int peek(DQueue* dqueue) {
     return dqueue->first->info;
 }
 
+int size(DQueue* dqueue) {
+    return dqueue->size;
+}
+
 bool empty(DQueue* dqueue) {
      if(dqueue == NULL) return false;
     return dqueue->size == 0;
