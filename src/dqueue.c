@@ -59,7 +59,7 @@ bool empty(DQueue* dqueue) {
 void destroy(DQueue* dqueue) {
     if(dqueue == NULL || dqueue->first == NULL) return;
 
-    while(dqueue->size > 1) {
+    while(dqueue->size > 0) {
         dequeue(dqueue);
     }
 }
