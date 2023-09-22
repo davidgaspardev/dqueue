@@ -15,16 +15,17 @@ void enqueue(DQueue* dqueue, int info) {
     if(dqueue == NULL) return;
 
     DNode* node = (DNode*) malloc(sizeof(DNode));
+    if(node == NULL) return;
     node->info = info;
+    node->next = NULL;
 
     if(dqueue->first == NULL) {
         dqueue->first = node;
-        dqueue->last = node;
     } else {
         dqueue->last->next = node;
-        dqueue->last = node;
     }
 
+    dqueue->last = node;
     dqueue->size += 1;
 }
 
