@@ -1,6 +1,6 @@
 #include "dqueue.h"
 
-DQueue* create() {
+DQueue* create_dqueue() {
     DQueue* dqueue = (DQueue*) malloc(sizeof(DQueue));
 
     if(dqueue != NULL) {

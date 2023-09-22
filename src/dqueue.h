@@ -15,7 +15,7 @@ typedef struct dqueue {
     int size;
 } DQueue;
 
-DQueue* create();
+DQueue* create_dqueue();
 void enqueue(DQueue* dqueue, int info);
 int dequeue(DQueue* dqueue);
 int peek(DQueue* dqueue);
