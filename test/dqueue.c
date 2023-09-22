@@ -22,6 +22,9 @@ int main() {
         }
     } while (control != 2);
 
+    printf("[ INFO ] Queue with %d items\n", size(dqueue));
+    printf("[ OK ] Peek info: %d\n", peek(dqueue));
+
     while(size(dqueue) > 0) {
         int info = dequeue(dqueue);
         printf("[ OK ] Dequeue this info: %d \n", info);
